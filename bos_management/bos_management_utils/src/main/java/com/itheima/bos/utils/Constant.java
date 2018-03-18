@@ -9,6 +9,8 @@ public interface Constant {
 	String SAVE_SUCCESS = "save_success";
 	String DELETE_SUCCESS = "delete_success";
 	String REDUCTION_SUCCESS = "reduction_success";
+	String IMPORT_SUCCESS = "import_success";
+	String UPDATE_SUCCESS = "update_success";
 
 }
   

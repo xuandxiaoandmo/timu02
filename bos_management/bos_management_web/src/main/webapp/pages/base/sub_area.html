@@ -14,8 +14,8 @@
 		<script type="text/javascript" src="../../js/easyui/ext/jquery.portal.js"></script>
 		<script type="text/javascript" src="../../js/easyui/ext/jquery.cookie.js"></script>
 		<script src="../../js/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
-		<script type="text/javascript" src="../../js/highcharts/highcharts.js"></script>
-		<script type="text/javascript">
+<!-- 		<script type="text/javascript" src="../../js/highcharts/highcharts.js"></script>-->		
+        <script type="text/javascript">
 			function doAdd(){
 				$('#addWindow').window("open");
 			}
@@ -200,6 +200,16 @@
 				});
 			});
 		
+			function save(){
+				var flag=$("#subareaForm").form("validate");
+				if(flag){
+					$("#subareaForm").submit();
+				}else{
+					$.messager.alert('我的消息','亲填完表单哟！么么哒(ฅ´ω`ฅ).','info');
+				}
+				
+			}
+			
 			function doDblClickRow(){
 				alert("双击表格数据...");
 			}
@@ -214,7 +224,7 @@
 		<div class="easyui-window" title="分区添加修改" id="addWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
 			<div style="height:31px;overflow:hidden;" split="false" border="false">
 				<div class="datagrid-toolbar">
-					<a id="save" icon="icon-save" href="#" class="easyui-linkbutton" plain="true">保存</a>
+					<a id="save" icon="icon-save" href="javaScript:save()" class="easyui-linkbutton" plain="true">保存</a>
 				</div>
 			</div>
 
@@ -227,9 +237,9 @@
 						<tr>
 							<td>选择区域</td>
 							<td>
-								<input class="easyui-combobox" name="area.id"
-									 data-options="valueField:'id',textField:'name',
-									 url:''" />
+								<input class="easyui-combobox"  width="200px" name="area.id"
+									 data-options="valueField:'id',textField:'name',mode:'remote',
+									 url:'../../areaAction_findAll.action'" />
 							</td>
 						</tr>
 						<tr>

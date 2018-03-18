@@ -1,6 +1,7 @@
 package com.itheima.bos.dao.base;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
@@ -11,7 +12,7 @@ import com.itheima.bos.domain.base.Courier;
  * Function:  <br/>  
  * Date:     2018年3月14日 下午4:07:43 <br/>       
  */
-public interface CourierRepository extends JpaRepository<Courier, Long>{
+public interface CourierRepository extends JpaRepository<Courier, Long>, JpaSpecificationExecutor<Courier>  {
 
 	
 	@Modifying

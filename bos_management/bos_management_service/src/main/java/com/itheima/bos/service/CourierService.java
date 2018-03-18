@@ -2,6 +2,7 @@ package com.itheima.bos.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 
 import com.itheima.bos.domain.base.Courier;
 
@@ -14,7 +15,7 @@ public interface CourierService {
 
 	void save(Courier model);
 
-	Page<Courier> pageFindAll(Pageable pageable);
+	Page<Courier> pageFindAll(Specification<Courier> specification, Pageable pageable);
 
 	void deledtById(String string);
 
