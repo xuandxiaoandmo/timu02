@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>ZTREE DEMO</TITLE>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="../../js/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css"
+	href="../../js/easyui/themes/icon.css">
+<script type="text/javascript" src="../../js/jquery-1.8.3.js"></script>
+<script type="text/javascript"
+	src="../../js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../../js/easyui-lang-zh_CN.js"></script>
+
+</HEAD>
+
+<script type="text/javascript">
+	$(function() {
+
+		$('#cc').combotree('loadData', [ {
+			"children" : [ {
+				"children" : [],
+				"description" : "百度一下你就知道",
+				"id" : 223,
+				"name" : "百度",
+				"page" : "http://www.baidu.com",
+				"priority" : 1,
+				"text" : "百度"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 117,
+				"name" : "管理定区/调度排班",
+				"page" : "pages/base/fixed_area.html",
+				"priority" : 7,
+				"text" : "管理定区/调度排班"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 116,
+				"name" : "管理分区",
+				"page" : "pages/base/sub_area.html",
+				"priority" : 6,
+				"text" : "管理分区"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 112,
+				"name" : "收派标准",
+				"page" : "pages/base/standard.html",
+				"priority" : 2,
+				"text" : "收派标准"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 118,
+				"name" : "收派时间管理",
+				"page" : "pages/base/take_time.html",
+				"priority" : 8,
+				"text" : "收派时间管理"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 111,
+				"name" : "基础档案设置",
+				"page" : "pages/base/archives.html",
+				"priority" : 1,
+				"text" : "基础档案设置"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 115,
+				"name" : "区域设置",
+				"page" : "pages/base/area.html",
+				"priority" : 5,
+				"text" : "区域设置"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 114,
+				"name" : "快递员设置/替班",
+				"page" : "pages/base/courier.html",
+				"priority" : 4,
+				"text" : "快递员设置/替班"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 113,
+				"name" : "班车管理",
+				"page" : "pages/base/vehicle.html",
+				"priority" : 3,
+				"text" : "班车管理"
+			} ],
+			"description" : "",
+			"id" : 11,
+			"name" : "基础档案",
+			"page" : "",
+			"priority" : 1,
+			"text" : "基础档案"
+		}, {
+			"children" : [ {
+				"children" : [],
+				"description" : "",
+				"id" : 126,
+				"name" : "异调运单",
+				"page" : "pages/take_delivery/different_waybill.html",
+				"priority" : 6,
+				"text" : "异调运单"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 127,
+				"name" : "运单打印",
+				"page" : "pages/take_delivery/waybill_print.html",
+				"priority" : 7,
+				"text" : "运单打印"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 125,
+				"name" : "运单管理",
+				"page" : "pages/take_delivery/waybill_manage.html",
+				"priority" : 5,
+				"text" : "运单管理"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 122,
+				"name" : "运单快速录入",
+				"page" : "pages/take_delivery/waybill_quick.html",
+				"priority" : 2,
+				"text" : "运单快速录入"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 124,
+				"name" : "运单导入",
+				"page" : "pages/take_delivery/waybill_import.html",
+				"priority" : 4,
+				"text" : "运单导入"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 123,
+				"name" : "运单录入",
+				"page" : "pages/take_delivery/waybill.html",
+				"priority" : 3,
+				"text" : "运单录入"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 121,
+				"name" : "业务受理",
+				"page" : "pages/take_delivery/order.html",
+				"priority" : 1,
+				"text" : "业务受理"
+			} ],
+			"description" : "",
+			"id" : 12,
+			"name" : "受理",
+			"page" : "",
+			"priority" : 2,
+			"text" : "受理"
+		}, {
+			"children" : [ {
+				"children" : [],
+				"description" : "",
+				"id" : 131,
+				"name" : "查台转单",
+				"page" : "pages/take_delivery/change_work_order.html",
+				"priority" : 1,
+				"text" : "查台转单"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 133,
+				"name" : "取派调度监控",
+				"page" : "pages/take_delivery/dispatcher_monitor.html",
+				"priority" : 3,
+				"text" : "取派调度监控"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 132,
+				"name" : "人工调度",
+				"page" : "pages/take_delivery/dispatcher.html",
+				"priority" : 2,
+				"text" : "人工调度"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 135,
+				"name" : "取消签收申请",
+				"page" : "pages/take_delivery/sign_cancel.html",
+				"priority" : 5,
+				"text" : "取消签收申请"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 136,
+				"name" : "宣传任务",
+				"page" : "pages/take_delivery/promotion.html",
+				"priority" : 6,
+				"text" : "宣传任务"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 134,
+				"name" : "签收录入",
+				"page" : "pages/take_delivery/sign_input.html",
+				"priority" : 4,
+				"text" : "签收录入"
+			} ],
+			"description" : "",
+			"id" : 13,
+			"name" : "调度",
+			"page" : "",
+			"priority" : 3,
+			"text" : "调度"
+		}, {
+			"children" : [ {
+				"children" : [],
+				"description" : "",
+				"id" : 148,
+				"name" : "合包查询",
+				"page" : "pages/transit/package_search.html",
+				"priority" : 8,
+				"text" : "合包查询"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 147,
+				"name" : "库存查询",
+				"page" : "pages/transit/remain_search.html",
+				"priority" : 7,
+				"text" : "库存查询"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 144,
+				"name" : "合包",
+				"page" : "pages/transit/compose_package.html",
+				"priority" : 4,
+				"text" : "合包"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 143,
+				"name" : "盘库",
+				"page" : "pages/transit/make_storage.html",
+				"priority" : 3,
+				"text" : "盘库"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 141,
+				"name" : "入库",
+				"page" : "pages/transit/in_storage.html",
+				"priority" : 1,
+				"text" : "入库"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 142,
+				"name" : "出库",
+				"page" : "pages/transit/out_storage.html",
+				"priority" : 2,
+				"text" : "出库"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 146,
+				"name" : "出入库查询",
+				"page" : "pages/transit/in_out_search.html",
+				"priority" : 6,
+				"text" : "出入库查询"
+			}, {
+				"children" : [],
+				"description" : "",
+				"id" : 145,
+				"name" : "到达时间录入",
+				"page" : "pages/transit/arrive_time.html",
+				"priority" : 5,
+				"text" : "到达时间录入"
+			} ],
+			"description" : "",
+			"id" : 14,
+			"name" : "分拣管理",
+			"page" : "",
+			"priority" : 4,
+			"text" : "分拣管理"
+		} ]);
+
+	})
+</script>
+
+<BODY>
+    
+	<div align="center">
+		<select id="cc" class="easyui-combotree" style="width: 200px;"
+			data-options="required:true,editable:true"></select>
+	</div>
+
+
+</BODY>
+</HTML>
